@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Viking</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='st">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="#nossahistoria">NOSSA HISTÓRIA</a></li>
-                <li><a href="#servicos">SERVIÇOS</a></li>
-                <li><a href="#promo">PROMOÇÕES</a></li>
-                <li><a href="#agendamento">AGENDAMENTO</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#contato">CONTATE-NOS</a></li>
-                <li><a href="#equipe">NOSSA EQUIPE</a></li>
+                <a href="">HOME</a>
+                <a href="#nossahistoria">NOSSA HISTÓRIA</a>
+                <a href="#servicos">SERVIÇOS</a>
+                <a href="#promo">PROMOÇÕES</a>
+                <a href="#agendamento">AGENDAMENTO</a>
+                <a href="#blog">BLOG</a>
+                <a href="#contato">CONTATE-NOS</a>
+                <a href="#equipe">NOSSA EQUIPE</a>
+                <footer class="footer">
+                    <div class="social">
+                        <a href=""><i class='bx bxl-facebook-circle' style='color:#ffffff'  ></i></a>
+                        <a href=""><i class='bx bxl-instagram-alt bx-spin' style='color:#ffffff' ></i></a>
+                        <a href=""><i class='bx bxl-tiktok bx-spin' style='color:#ffffff'  ></i></a>
+                    </div>
+                </footer>
             </ul>
         </nav>
     </header>
 
     <section id="nossahistoria" class="historia">
         <h2><strong>Nossa História</strong></h2>
-        <h3>Em uma cidade em crescimento, onde o estilo e a autenticidade são valorizados, nasceu a <strong>Barbearia Viking</strong>.</h3>
+        <h3>Em uma cidade em crescimento, onde o estilo e a autenticidade são valorizados, nasce, a <strong>Barbearia Viking</strong>.</h3>
          <p>A ideia veio de <strong>Lucas</strong>, um barbeiro apaixonado pela arte do corte e pela cultura nórdica. Depois de anos trabalhando em uma barbearia tradicional, ele sonhou em criar um espaço que refletisse sua personalidade e oferecesse uma experiência diferenciada.</p>
     </section>
 
@@ -100,10 +108,11 @@
     </section>
 
     <section id="agendamento" class="agend">
-        <h2><strong>Agende Seu Horário</strong></h2>
+        <h2 class="h2-color"><strong>Agende Seu Horário</strong></h2>
         <br>
         <p>Oferecemos cortes de cabelo e cuidados para a barba com profissionais qualificados. Agende seu horário na nossa barbearia e transforme seu visual!</p>
         <br>
+        <div class="form-content">
         <form>
             <label for="name">Como você se chama?</label>
             <input type="text" placeholder="Digite Seu Nome">
@@ -116,6 +125,7 @@
             <input type="time" placeholder="Agende Seu Horário">
             <button>Agendar</button>
         </form>
+        </div>
     </section>
 
     <section id="promo" class="promo">
@@ -135,6 +145,7 @@
             <input type="text" placeholder="Nome e Sobrenome">
             <label for="mensagem">Deixe Aqui Sua Mensagem</label>
             <textarea name="mensagem" id="" placeholder="Mensagem"></textarea>
+            <button>Enviar</button>
         </form>
     </section>
 
@@ -146,7 +157,7 @@
             <input type="number" placeholder="Celular">
             <input type="text" placeholder="Assunto">
             <textarea name="mensagem" id="" placeholder="Mensagens"></textarea>
-            <button>Enviar Mensagem</button>
+            <button>Enviar</button>
         </form>
     </section>
 
