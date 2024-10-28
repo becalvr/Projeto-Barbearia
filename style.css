@@ -2,6 +2,7 @@
 label{
     color: white;
     margin-left: 450px;
+    text-align: center;
 }
 
 input[type=text], [type=email], [type=name], [type=number], textarea{
@@ -37,21 +38,24 @@ padding: 0;
 text-decoration: none; 
 list-style: none; 
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 /* /==== Menu Barra Navegação ====/  */
+
+body {
+    overflow-x: hidden;
+}
 
 .header { 
 position: fixed; 
 top: 0; 
 left: 0; 
 width: 100%; 
-padding-top: 30px; 
+padding-top: 15px; 
 padding-bottom: 10px; 
 background: black; 
 backdrop-filter: blur (10px); 
-display: flex; 
+display: inline-block; 
 align-items: center; 
 z-index: 100; 
 }
@@ -60,20 +64,17 @@ z-index: 100;
 font-size: 25px; 
 color: teal; 
 font-weight: 800; 
-transition: 0.3s ease; }
+transition: 0.3s ease;
+}
 
 .logo:hover { 
 transform: scale(1.1); }
 
-.cor_logo { 
-color: teal; }
-
 .navbar { 
-background-color: black; }
-
+background-color: black;
+}
 
 /* /==== Menu Barra Navegação ====/ */
-
 .navbar a { 
 font-size: 20px; 
 color: white; 
@@ -81,15 +82,14 @@ font-weight: 500;
 margin: 0 20px; 
 border-bottom: 3px solid transparent; 
 transition: 0.3s ease; 
-display: inline-block; }
+display: inline-block;
+}
 
 .navbar a:hover, .navbar a.active { 
 color: darkslategray; 
 transform: scale(1.1); }
 
-
 /* ==== Footer ====*/ 
-
 .footer { 
 position: relative; 
 bottom: 0; 
@@ -105,20 +105,21 @@ color: white; }
 font-size: 25px; 
 color: white; 
 width: 40px; 
-height: 40px; 
-line-height: 38px; 
+height: 40px;  
 display: inline-block; 
-text-align: center; 
 border-radius: 50%; 
-margin: 0 8px; 
-transition: 0.3s ease; }
+transition: 0.3s ease;
+}
 
 .footer .social a:hover { 
 border: 3px solid white; 
 transform: scale(1.2) translateY(-10px); }
 
-
 /* ==== Section ====*/
+
+body {
+    height: 100vh;
+}
 
 .historia {
     color: aliceblue;
@@ -130,6 +131,7 @@ transform: scale(1.2) translateY(-10px); }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
 }
 
 .historia h2{
@@ -159,12 +161,13 @@ margin-right: 410px;
     padding: 12% 8%;
     gap: 10em;
     background-color: black;
+    height: 100vh;
 
 }
 
 h2 { 
 font-size: 35px; 
-color: rgb(0, 0, 0); 
+color: white; 
 text-align: center; 
 align-items: center; }
 
@@ -183,7 +186,7 @@ color: teal;
 transition: 0.3s ease;}
 
 .promo { 
-color: rgb(0, 0, 0); 
+color: white; 
 font-size: 18px; 
 text-align: center; 
 align-items: center; 
@@ -193,7 +196,9 @@ background-image: url(img/paredeescura.jpg);
 width: 100%; 
 background-size: cover; 
 background-repeat: no-repeat; 
-background-position: center; }
+background-position: center; 
+}
+
 
 .agend { 
 width: 100%; 
@@ -202,6 +207,7 @@ align-items: center;
 padding: 12% 8%; 
 gap: 10em; 
 background-color: black;
+height: 100vh;
 
 }
 
@@ -211,7 +217,10 @@ text-align: center;
 align-items: center; 
 padding: 12% 8%; 
 gap: 10em; 
-background-color: black; }
+background-color: black;
+height: 100vh;
+
+}
 
 .contato { 
 color: aliceblue; 
@@ -220,7 +229,9 @@ text-align: center;
 align-items: center; 
 padding: 12% 8%; 
 gap: 10em; 
-background-color: rgb(29, 28, 28); }
+background-color: rgb(29, 28, 28);
+height: 100vh;
+}
 
 .contato:hover { 
 color:teal; 
@@ -237,7 +248,12 @@ background-image: url(img/parede.comlampadas.jpg);
 width: 100%; 
 background-size: cover; 
 background-repeat: no-repeat; 
-background-position: center; }
+background-position: center; 
+}
+
+.equipe:hover {
+    color:teal;
+}
 
 .grid-container { 
 display: grid; /*grid-template-columns geram 3 colunas iguais/  */
