@@ -33,6 +33,12 @@ padding: 12px 20px;
 margin-left: -98px;
 }
 
+button:hover {
+    background-color: teal;
+    color: white;
+    border-color: aqua;
+}
+
 *{ margin: 0;
 padding: 0; 
 text-decoration: none; 
@@ -193,6 +199,7 @@ align-items: center;
 padding: 12% 8%; 
 gap: 10em; 
 background-image: url(img/paredeescura.jpg); 
+background-attachment: fixed;
 width: 100%; 
 background-size: cover; 
 background-repeat: no-repeat; 
@@ -245,6 +252,7 @@ align-items: center;
 padding: 12% 8%; 
 gap: 10em; 
 background-image: url(img/parede.comlampadas.jpg); 
+background-attachment: fixed;
 width: 100%; 
 background-size: cover; 
 background-repeat: no-repeat; 
